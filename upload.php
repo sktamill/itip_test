@@ -9,6 +9,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     $tmp_upload_path = 'tmp';
 
+    if(!is_dir($tmp_upload_path)) mkdir($tmp_upload_path);
+
     $error = [];
 
     $mess = [

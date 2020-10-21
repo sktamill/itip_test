@@ -1,0 +1,31 @@
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: scale(0)  }
+to { -webkit-transform: scale(1)  }
+}
+@-moz-keyframes cssAnimation {
+from { -webkit-transform: scale(0)  }
+to { -webkit-transform: scale(1)  }
+}
+@-o-keyframes cssAnimation {
+from { -webkit-transform: scale(0)  }
+to { -webkit-transform: scale(1)  }
+}
+
+h1{text-align: center; margin-bottom: 50px; text-transform: uppercase; text-decoration: underline;}
+
+div#wrapper{text-align: center;}
+div#wrapper form#upload label{background-color: #3c9cb0; color: #fff; font:bold 20px Verdana; padding: 20px; cursor: pointer; display: inline-block;
+border-radius: 10px; -webkit-border-radius: 10px;}
+div#wrapper form#upload label:hover{background-color: #f9981b;
+transition:All 1s ease;
+-webkit-transition:All 1s ease;}
+
+div#wrapper progress{margin-top: 50px; width: 300px; height: 50px; display: none;}
+
+div#wrapper div.preview{position: relative; width: 350px; margin: 30px auto 0 auto;}
+div#wrapper div.preview span{position: absolute; top: 10px; left: 10px; font:bold 18px Vredana; color: #fff;
+    -webkit-animation: cssAnimation 1s infinite ease;
+    -moz-animation: cssAnimation 1s infinite ease;
+    -o-animation: cssAnimation 1s infinite ease;}
+div#wrapper div.preview img{width: 350px; display: block; margin: 0 auto;}
+div#wrapper div.mess{color: #ed1b24; font:bold 15px Verdana; margin-top: 40px;}
